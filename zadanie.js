@@ -5,7 +5,7 @@ function mainWrapper() {
     $listaPostaci: document.getElementById("lista"),
     $lista: document.getElementById("lista"),
     $liczbaPostaci: document.getElementById("liczba-postaci"),
-    $aktualnaStrona: document.getElementById("aktualna-strona"),
+    $naKtorejStonieJestesmy: document.getElementById("aktualna-strona"),
     $iloscStron: document.getElementById("ilosc-stron"),
     filters: {
       name: "",
@@ -99,7 +99,8 @@ function mainWrapper() {
   }
 
   function updateUI() {
-    stanAplikacji.$aktualnaStrona.innerHTML = stanAplikacji.page;
+    stanAplikacji.$naKtorejStonieJestesmy.innerHTML = stanAplikacji.page;
+    console.log("stanAplikacji.page", stanAplikacji.page);
   }
 
   async function pobierzPostaci() {
